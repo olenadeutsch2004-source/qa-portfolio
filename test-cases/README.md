@@ -1,57 +1,51 @@
 # Test Cases
 
-## Feanure: Login Page
+## Feature: Login Page
 
-Deskription: Testing login functionality of web application.
-Fields:
--Email
--Password
--Login button
+Description: Testing login functionality of demo website.
 
-### Test Case 1: Login with spaces in email
+Tested on: https://demoqa.com/login
+Browser: Chrome
+OS: Windows 10
+
+### Test Case 1: Successful login
 - Steps:
-  1. Open login page
-  2. Enter email with spaces before and after
-  3. Enter valid password
-  4. Click login
+  1. Open https://demoqa.com/login
+  2. Enter valid username: `testuser`
+  3. Enter valid password: `Test@123`
+  4. Click login button
 - Expected result:
-  Email is trimmed or validation error is shown
+  User is redirected to the profile page
 
-### Test Case 2: Invalid password
+### Test Case 2: Login with invalid password
 - Steps:
-  1. Enter valid username
-  2. Enter invalid password
-  3. Click login
+  1. Open https://demoqa.com/login
+  2. Enter valid username: `testuser`
+  3. Enter invalid password: `wrongpass`
+  4. Click login button
 - Expected result:
-  Error message is displayed
+  Error message “Invalid username or password” is displayed
 
-  ### Test Case 3 – Empty fields
-
--Steps: 
-1. Open login page
-2. Leave email emty
-3. Leave password empty
-4. Click login
+### Test Case 3: Login with empty fields
+- Steps:
+  1. Open https://demoqa.com/login
+  2. Leave username empty
+  3. Leave password empty
+  4. Click login button
 - Expected result:
-  Validation error is schown
-  
-### Test Case 4 – Invalid email format
+  Validation error is displayed for both fields
+ ### Test Case 4: Invalid username format
+- Steps:
+  1. Open https://demoqa.com/login
+  2. Enter invalid username: `123!@#`
+  3. Enter valid password: `Test@123`
+  4. Click login button
+- Expected result:
+  Error message “Invalid username format” is displayed
 
--Steps: 
-1. Open login page
-2. Enter invalid email (exsample: 123)
-3. Clicck login
-
-### Test Case 5 – Password field is mas
-
--Steps: 
-1.Open login page
-2. Enter password
-
--Expected result:
-Password is displayed as dots or asterisks
-
-### Test Case 6 – Search product
-
-* Steps: Enter product name → Click search
-* Expected Result: Relevant results displayed
+### Test Case 5: Password field is masked
+- Steps:
+  1. Open https://demoqa.com/login
+  2. Enter any password
+- Expected result:
+  Password is displayed as dots or asterisks
