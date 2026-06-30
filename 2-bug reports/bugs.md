@@ -1,98 +1,86 @@
-## Bug: Login button does not respond
+## BUG-01: Login button does not respond
 
-Environment:
+- Environment:
+  - URL: https://demoqa.com/login
+  - Browser: Chrome
+  - OS: Windows 10
 
-* URL: https://demoqa.com/login
-* Browser: Chrome
-* OS: Windows 10
+- Preconditions:
+  - User is registered
+  - User is on the login page
 
-Preconditions:
+- Test Data:
+  - Username: testuser
+  - Password: Test@123
 
-* User is registered
-* User is on the login page
+- Steps to Reproduce:
+  1. Open https://demoqa.com/login
+  2. Enter valid username
+  3. Enter valid password
+  4. Click the "Login" button
 
-Test Data:
+- Actual Result:
+  - No action occurs after clicking the button
+  - User is not logged in
+  - No error message is displayed
 
-* Username: testuser
-* Password: Test@123
+- Expected Result:
+  - User should be logged in successfully
+  - User should be redirected to the profile page
 
-Steps to Reproduce:
+- Severity: Critical
+- Priority: High
 
-1. Open https://demoqa.com/login
-2. Enter username: testuser
-3. Enter password: Test@123
-4. Click the "Login" button
+---
 
-Actual Result:
+## BUG-02: Login form is submitted with empty fields
 
-* No action occurs after clicking the button
-* User is not logged in
-* No error message is displayed
+- Environment:
+  - URL: https://demoqa.com/login
+  - Browser: Chrome
+  - OS: Windows 10
 
-Expected Result:
+- Preconditions:
+  - User is on the login page
 
-* User should be successfully logged in
-* User should be redirected to the profile page
+- Steps to Reproduce:
+  1. Open https://demoqa.com/login
+  2. Leave username field empty
+  3. Leave password field empty
+  4. Click the "Login" button
 
-Severity: Critical
-Priority: High
+- Actual Result:
+  - Form is submitted without validation
+  - No error messages are displayed
 
-## Bug 2: Login form is submitted with empty feilds
+- Expected Result:
+  - Validation errors should be displayed for required fields
+  - Form should not be submitted
 
-Environment:
+- Severity: High
+- Priority: High
 
-URL: https://demoqa.com/login
-Browser: Chrome
-OS: Windows 10
+---
 
-Preconditions:
+## BUG-03: Password is visible in plain text
 
-User is on the login page
+- Environment:
+  - URL: https://demoqa.com/login
+  - Browser: Chrome
+  - OS: Windows 10
 
-Steps to Reproduce:
+- Preconditions:
+  - User is on the login page
 
-Open https://demoqa.com/login
-Leave username field empty
-Leave password field empty
-Click the "Login" button
+- Steps to Reproduce:
+  1. Open https://demoqa.com/login
+  2. Enter any value into the password field
 
-Actual Result:
+- Actual Result:
+  - Password is displayed in plain text
 
-Form is submitted without validation
-No error messages are displayed
+- Expected Result:
+  - Password should be masked (displayed as dots or asterisks)
 
-Expected Result:
-
-Validation errors should be displayed for both fields
-Form should not be submitted
-
-Severity: High
-Priority: High
-
-## Bug 3: Password is visible in plain text
-
-Environment:
-
-* URL: https://demoqa.com/login
-* Browser: Chrome
-* OS: Windows 10
-
-Preconditions:
-
-* User is on the login page
-
-Steps to Reproduce:
-
-1. Open https://demoqa.com/login
-2. Enter any value into the password field
-
-Actual Result:
-
-* Password is visible in plain text
-
-Expected Result:
-
-* Password should be masked (displayed as dots or asterisks)
-
-Severity: High
-Priority: High
+- Severity: High
+- Priority: High
