@@ -1,3 +1,9 @@
+## Tested Application
+
+Website: https://demoqa.com/login  
+Type: Web application  
+Testing type: Manual testing (functional, UI, validation)
+
 ## BUG-01: Login button does not respond
 
 - Environment:
