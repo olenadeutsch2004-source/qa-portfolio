@@ -6,4 +6,10 @@ Junior QA tester based in Germany.
 - Manual testing
 - Test cases
 - Bug reports
-- API testing (Postman)
+- 
+# API Testing (Postman)
+
+- Tested GET request
+- Checked status code (200 OK)
+- Validated response (title exists)
+- Tool: Postman
