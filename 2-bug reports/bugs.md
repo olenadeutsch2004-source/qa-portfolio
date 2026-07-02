@@ -39,6 +39,8 @@ Testing type: Manual testing (functional, UI, validation)
 
 - Notes:
   - Issue reproduced multiple times
+ 
+Status: Open
 
 ---
 
@@ -69,6 +71,8 @@ Testing type: Manual testing (functional, UI, validation)
 - Severity: High
 - Priority: High
 
+  Status: Open
+
 ---
 
 ## BUG-03: Password is visible in plain text
@@ -93,3 +97,5 @@ Testing type: Manual testing (functional, UI, validation)
 
 - Severity: High
 - Priority: High
+
+  Status: Open
