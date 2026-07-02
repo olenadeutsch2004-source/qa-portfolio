@@ -37,6 +37,9 @@ Testing type: Manual testing (functional, UI, validation)
 - Severity: Critical
 - Priority: High
 
+- Notes:
+  - Issue reproduced multiple times
+
 ---
 
 ## BUG-02: Login form is submitted with empty fields
