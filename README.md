@@ -1,6 +1,6 @@
 # QA Portfolio
 
-Junior QA tester based in Germany.
+Junior QA tester based in Germany (B2 German, basic English).
 
 ## Skills
 - Manual testing
